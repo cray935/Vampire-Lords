@@ -1,0 +1,21 @@
+namespace = vampire_lords_init
+
+country_event = {
+	id = vampire_lords_init.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				owner = { has_civic = civic_vampire_lords }
+			}
+
+			give_technology = { tech = tech_necromantic_studies message = no }
+			give_technology = { tech = tech_necromancy_mastery message = no }
+			give_technology = { tech = tech_ritual_create_undead message = no }
+			give_technology = { tech = tech_school_of_the_flesh message = no }
+
+		}
+	}
+}

@@ -1,0 +1,25 @@
+civic_vampire_lords = {
+	icon = "gfx/interface/icons/governments/civics/civic_vampire_lords.dds"
+
+	playable = {
+		has_necroids = yes
+		has_utopia = yes
+	}
+
+	possible = {
+	}
+
+	description = civic_vampire_lords_effects
+
+	traits = {
+		trait = trait_necromage
+		trait = trait_vampire
+	}
+
+	advanced_start = yes
+	modification = no
+
+	random_weight = {
+		base = 0
+	}
+}

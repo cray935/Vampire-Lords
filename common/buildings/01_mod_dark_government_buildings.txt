@@ -1,0 +1,120 @@
+building_ziggurat = {
+	base_buildtime = @b2_time
+
+	category = government
+
+	base_cap_amount = 1
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+	}
+
+	convert_to = {
+		building_military_academy
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+		buildings_simple_allow = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		NOT = {
+			owner = { has_technology = tech_necromancy_mastery }
+		}
+	}
+
+	planet_modifier = {
+		job_necromancer_add = 4
+		planet_stability_add = 5
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = job_necromancer_effect_desc
+	}
+
+	prerequisites = {
+		"tech_necromancy_mastery"
+	}
+}
+
+building_house_of_the_fleshsculpter = {
+	base_buildtime = @b1_time
+
+	category = pop_assembly
+
+	base_cap_amount = 1
+
+	prerequisites = {
+		"tech_school_of_the_flesh"
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			AND = {
+				owner = { is_ai = yes }
+				planet = {
+					free_district_slots = 0
+					free_building_slots = 0
+				}
+			}
+			NOT = { owner = { has_technology = tech_school_of_the_flesh } }
+		}
+	}
+
+	planet_modifier = {
+		job_fleshsculpter_add = 3
+	}
+
+	resources = {
+		category = planet_buildings
+
+		# Base cost
+		cost = {
+			minerals = 500
+		}
+		# Org/Lith cost
+		cost = {
+			trigger = {
+				exists = owner
+				owner = { is_lithoid_empire = no }
+			}
+			food = 500
+		}
+		cost = {
+			trigger = {
+				exists = owner
+				owner = { is_lithoid_empire = yes }
+			}
+			energy = 500
+		}
+
+		# Base upkeep
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_building = building_robot_assembly_plant
+		}
+		text = tooltip_organic_and_artificial_assembly_warning
+	}
+}

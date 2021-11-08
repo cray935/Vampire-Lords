@@ -3,7 +3,6 @@ civic_vampire_lords = {
 
 	playable = {
 		has_necroids = yes
-		has_utopia = yes
 	}
 
 	possible = {

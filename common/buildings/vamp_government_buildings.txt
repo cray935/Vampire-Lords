@@ -1,4 +1,4 @@
-building_vampire_court = {
+building_vampire_court_1 = {
 	base_buildtime = @b2_time
 	base_cap_amount = 1
 
@@ -8,7 +8,7 @@ building_vampire_court = {
 		exists = owner
 		planet = {
 			NOT = {
-				has_building = building_vampire_court
+				has_building = building_vampire_court_1
 			}
 		}
 		owner = { has_valid_civic = civic_vampire_lords }

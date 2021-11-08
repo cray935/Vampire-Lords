@@ -1,7 +1,7 @@
 job_vampire_lord = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
-	building_icon = building_vampire_court
+	building_icon = building_vampire_court_1
 	clothes_texture_index = 1
 
 	possible_pre_triggers = {
@@ -49,7 +49,7 @@ job_vampire_lord = {
 vampire_servant = {
 	category = worker
 	is_capped_by_modifier = no
-	building_icon = building_luxury_residence
+	building_icon = building_vampire_court_1
 	clothes_texture_index = 2
 
 	possible_pre_triggers = {

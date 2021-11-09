@@ -3,3 +3,23 @@
  civic_vampire_lords:0 "Vampire Lords"
  civic_vampire_lords_desc:0 "These creatures managed to solve forbidden knowledge of the dark arts and turned theirselves to creatures of eternal darkness."
  civic_vampire_lords_effects:0 "Start with primary species being necromage vampires and all necromage technologies." 
+
+ building_vampire_court_1:0 "Vampire Lord Estates"
+ building_vampire_court_1_desc:0 "These estates belong to a mighty Vampire Lord which rules over most parts of this world."
+ building_vampire_court_2:0 "Vampire Lord Manor"
+ building_vampire_court_2_desc:0 "$building_vampire_court_1_desc$"
+ building_vampire_court_3:0 "Vampire Lord Palace"
+ building_vampire_court_3_desc:0 "$building_vampire_court_1_desc$"
+
+ job_vampire_lord:0 "Vampire Lord"
+ job_vampire_lord_plural:1 "Vampire Lords"
+ job_vampire_lord_desc:0 "A mighty lord which rules over many vampires and mortals."
+ job_vampire_lord_effect_desc:1 "£job_vampire_lord£ $job_vampire_lord_plural$ produce £unity£ §Y$unity$§! and £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!"
+ mod_job_vampire_lord_add:0 "$job_vampire_lord$ Jobs"
+ mod_job_vampire_lord_per_pop:0 "§G+1§! $job_vampire_lord$ Job per $VALUE$ Pops"
+ mod_job_vampire_lord_per_pop_short:0 "\n§G+1§! £mod_job_vampire_lord_add£ per $VALUE$ £pop£"
+
+ vampire_servant:0 "Servant"
+ vampire_servant_plural:0 "Servants"
+ vampire_servant_desc:1 "Servants perform various menial domestic tasks and household work for their masters."
+ mod_vampire_servant_add:0 "$vampire_servant$ Jobs"

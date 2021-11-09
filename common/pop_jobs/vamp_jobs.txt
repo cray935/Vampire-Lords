@@ -1,4 +1,4 @@
-job_vampire_lord = {
+vampire_lord = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
 	building_icon = building_vampire_court_1
@@ -18,7 +18,7 @@ job_vampire_lord = {
 	}
 
 	resources = {
-		category = planet_vampire_lords
+		category = planet_nobles
 		produces = {
 			unity = 3
 		}

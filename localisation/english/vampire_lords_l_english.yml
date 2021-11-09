@@ -19,7 +19,8 @@
  mod_job_vampire_lord_per_pop:0 "§G+1§! $job_vampire_lord$ Job per $VALUE$ Pops"
  mod_job_vampire_lord_per_pop_short:0 "\n§G+1§! £mod_job_vampire_lord_add£ per $VALUE$ £pop£"
 
- vampire_servant:0 "Servant"
- vampire_servant_plural:0 "Servants"
- vampire_servant_desc:1 "Servants perform various menial domestic tasks and household work for their masters."
- mod_vampire_servant_add:0 "$vampire_servant$ Jobs"
+ job_vampire_servant:0 "Vampire Servant"
+ job_vampire_servant_plural:0 "Vampire Servants"
+ job_vampire_servant_desc:1 "Servants perform various menial domestic tasks and household work for their masters."
+ job_vampire_servant_effect_desc:1 "£job_vampire_servant£ $job_vampire_servant_plural$ produce £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+ mod_job_vampire_servant_add:0 "$job_vampire_servant$ Jobs"

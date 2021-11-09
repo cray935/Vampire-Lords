@@ -37,7 +37,7 @@ vampire_lord = {
 		}
 		modifier = {
 			factor = 5
-			has_job = job_vampire_lord
+			has_job = vampire_lord
 		}
 		modifier = {
 			factor = 2
@@ -48,7 +48,6 @@ vampire_lord = {
 
 vampire_servant = {
 	category = worker
-	is_capped_by_modifier = no
 	building_icon = building_vampire_court_1
 	clothes_texture_index = 2
 
@@ -108,6 +107,18 @@ vampire_servant = {
 	}
 
 	weight = {
-		weight = @special_job_weight
+		weight = @worker_job_weight
+
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = yes
+		}
+
+		modifier = {
+			factor = 5
+			is_enslaved = yes
+			can_take_servant_job = no
+		}
 	}
 }

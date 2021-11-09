@@ -54,13 +54,12 @@ building_vampire_court_1 = {
 	}
 
 	upgrades = {
-		building_vampire_court_2
+		"building_vampire_court_2"
 	}
 }
 
 building_vampire_court_2 = {
 	base_buildtime = @b2_time
-	base_cap_amount = 1
 	can_build = no
 
 	category = government
@@ -73,7 +72,6 @@ building_vampire_court_2 = {
 
 	allow = {
 		has_upgraded_capital = yes
-		buildings_simple_allow = yes
 	}
 
 	destroy_trigger = {
@@ -111,13 +109,12 @@ building_vampire_court_2 = {
 	}
 
 	upgrades = {
-		building_vampire_court_3
+		"building_vampire_court_3"
 	}
 }
 
 building_vampire_court_3 = {
 	base_buildtime = @b2_time
-	base_cap_amount = 1
 	can_build = no
 
 	category = government
@@ -130,7 +127,6 @@ building_vampire_court_3 = {
 
 	allow = {
 		has_major_upgraded_capital = yes
-		buildings_simple_allow = yes
 	}
 
 	destroy_trigger = {

@@ -14,8 +14,9 @@ vampire_lord = {
 
 	possible = {
 		has_trait = trait_vampire
-		ruler_job_check_trigger = yes
 	}
+	
+	possible_precalc = can_fill_ruler_job
 
 	resources = {
 		category = planet_nobles
